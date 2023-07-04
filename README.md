@@ -53,7 +53,7 @@ with open(output_file, "w") as pyBankoutput:
     pyBankoutput.write(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})\n")
     pyBankoutput.write(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})\n")
 
-#Py Election
+#Py Poll
 import os
 import csv
 
