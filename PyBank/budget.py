@@ -29,9 +29,11 @@ with open(path) as csvfile:
 
 avg_change = sum(changes) / len(changes)
 greatest_increase = max(changes)
-greatest_increase_date = dates[changes.index(greatest_increase)]
+greatest_increase_index = changes.index(greatest_increase)
+greatest_increase_date = dates[greatest_increase_index + 1]
 greatest_decrease = min(changes)
-greatest_decrease_date = dates[changes.index(greatest_decrease)]
+greatest_decrease_index = changes.index(greatest_decrease)
+greatest_decrease_date = dates[greatest_decrease_index + 1]
 
 print("Financial Analysis")
 print("-----------------------------")
